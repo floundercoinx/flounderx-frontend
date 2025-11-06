@@ -37,7 +37,7 @@ export default function FloundeRx() {
     setLoading(true);
 
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'https://flounderx-backend-production.up.railway.app';
+      const API_URL = process.env.NEXT_APP_API_URL || 'https://flounderx-backend-production.up.railway.app';
 
       const paymentIntentRes = await fetch(`${API_URL}/api/create-payment-intent`, {
         method: 'POST',
